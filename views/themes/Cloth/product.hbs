@@ -50,13 +50,17 @@
                     </div>
                     {{/ifCond}}
                 {{/if}}
+                {{!-- -------------PRODUCT QUANTITY------------- --}}
                 <div class="col-md-10 productOptions">
                     <p class="product-option-text">{{ @root.__ "Quantity" }}</p>
                     <div class="input-group">
+                        {{!-- -------------MINUS BUTTON------------- --}}
                         <div class="input-group-prepend">
                             <button class="btn btn-primary qty-btn-minus" type="button">-</button>
                         </div>
+                        {{!-- -------------NUMBER FIELD------------- --}}
                         <input type="number" class="form-control add-color text-center" id="product_quantity" maxlength="3" value="1">
+                        {{!-- -------------PLUS BUTTON------------- --}}
                         <div class="input-group-append">
                             <button class="btn btn-primary qty-btn-plus" type="button">+</button>
                         </div>
@@ -68,6 +72,7 @@
                     <textarea class="form-control" id="product_comment"></textarea>
                 </div>
                 {{/if}}
+                {{!-- -------------ADD TO CART BUTTON------------- --}}
                 <div class="col-md-10 btnAddToCart">
                     <button class="btn btn-primary btn-block product-add-to-cart" type="button">{{ @root.__ "Add to cart" }}</button>
                 </div>
