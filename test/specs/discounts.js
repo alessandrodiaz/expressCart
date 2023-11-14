@@ -1,6 +1,7 @@
 const {
     serial: test
 } = require('ava');
+const calculateDiscount = require('../../lib/modules/discount-voucher')
 const {
     runBefore,
     g
