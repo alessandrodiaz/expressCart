@@ -6,10 +6,10 @@ de descuento, el tipo, el valor y las fechas
 de aplicación
 */
 
-describe('Prueba para crear un CUPóN como administrador', () => {
+describe('Prueba para crear un CUPÓN como administrador', () => {
     it('Pruebas cambio de nombre de un cupón', () => {
 
-        // Primero es necesario loguearse
+        //Login
         cy.visit("http://localhost:1111/admin/users");
 
         //Ingreso de las credenciales
@@ -47,7 +47,7 @@ describe('Prueba para crear un CUPóN como administrador', () => {
 
     it('Pruebas cambio de tipo de un cupón', () => {
 
-        // Primero es necesario loguearse
+        //Login
         cy.visit("http://localhost:1111/admin/users");
 
         //Ingreso de las credenciales
@@ -83,7 +83,7 @@ describe('Prueba para crear un CUPóN como administrador', () => {
 
     it('Pruebas cambio a valor inválido de un cupón', () => {
 
-        // Primero es necesario loguearse
+        //Login
         cy.visit("http://localhost:1111/admin/users");
 
         //Ingreso de las credenciales
@@ -125,6 +125,7 @@ describe('Prueba para crear un CUPóN como administrador', () => {
     });
 
     it('Pruebas cambio fecha inválida un cupón', () => {
+        //Login
         cy.visit("http://localhost:1111/admin/users");
     
         // Ingreso de las credenciales
@@ -161,6 +162,7 @@ describe('Prueba para crear un CUPóN como administrador', () => {
     });
 
     it('Pruebas cambio fecha terminación de un cupón', () => {
+        //Login
         cy.visit("http://localhost:1111/admin/users");
     
         // Ingreso de las credenciales
@@ -196,6 +198,7 @@ describe('Prueba para crear un CUPóN como administrador', () => {
     });
 
     it('Pruebas cambio fecha terminación de un cupón incorrecta', () => {
+        //Login
         cy.visit("http://localhost:1111/admin/users");
     
         // Ingreso de las credenciales
