@@ -1,4 +1,4 @@
-/*
+
 const { getMenu, newMenu, deleteMenu, updateMenu, sortMenu, orderMenu } = require('../lib/menu');
 
 describe('getMenu', () => {
@@ -59,6 +59,4 @@ describe('deleteMenu', () => {
         });
     });
 });
-*/
 
-// Similar tests can be written for updateMenu, sortMenu, and orderMenu

@@ -10,11 +10,11 @@
     "emailPassword": "this_is_the_smtp_password",
     "emailAddress": "hi@markmoffat.com",
     "productsPerRow": 3,
-    "productsPerPage": 6,
-    "footerHtml": "&lt;h4 class=&quot;text-center&quot;&gt;Powered by expressCart&lt;/h4&gt;",
-    "googleAnalytics": "",
+    "productsPerPage": 10,
+    "footerHtml": "&lt;p&gt;Footer&lt;/p&gt;",
+    "googleAnalytics": "UA-12345678-1",
     "injectJs": "",
-    "customCss": "",
+    "customCss": "body{color:red}",
     "currencySymbol": "£",
     "currencyISO": "USD",
     "paymentGateway": [
@@ -47,5 +47,10 @@
         }
     },
     "showRelatedProducts": true,
-    "showHomepageVariants": false
+    "showHomepageVariants": false,
+    "secretCookie": "dd2eee5e1b4ede8f2094ed9f09a088fb3f0c6bd6",
+    "secretSession": "74b6d2034afae695a50448e4d239782f7a16b559",
+    "themeViews": "../views/themes/Cloth/",
+    "env": ".min",
+    "someField": "someValue"
 }
