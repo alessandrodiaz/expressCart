@@ -4,10 +4,10 @@ describe("crear Cupon valor negativo", () => {
 		cy.visit("http://localhost:1111/admin/login");
 
 		// Ingresar el correo electrónico
-		cy.get('input[type="email"]').type("karen@gmail.com");
+		cy.get('input[type="email"]').type("aless@gmail.com");
 
 		// Ingresar la contraseña
-		cy.get('input[type="password"]').type("1111");
+		cy.get('input[type="password"]').type("1234");
 
 		cy.get("#loginForm").click();
 		cy.get('.nav-link[href="/admin/settings/discounts"]').click();
