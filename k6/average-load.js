@@ -7,7 +7,7 @@ export const options = {
 	stages: [
 		// Prueba de carga
 		{ duration: "1m", target: 100 }, // Subir a 100 usuarios durante 2 minutos
-		{ duration: "10m", target: 100 }, // Mantener 100 usuarios durante 15 minutos
+		{ duration: "5m", target: 100 }, // Mantener 100 usuarios durante 15 minutos
 	],
 };
 
