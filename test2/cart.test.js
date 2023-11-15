@@ -118,4 +118,22 @@
 
       // Add assertions as needed
     });
+    it('should empty the cart correctly messaje', async () => {
+      const req = mockRequest();
+      const res = mockResponse();
+
+      // Mock DB deleteOne
+      req.app.db.cart = {
+        deleteOne: jest.fn().mockResolvedValue({})
+      };
+
+      // Set up session with some data
+      req.session.cart = {
+        item1: { quantity: 2, totalItemPrice: 20 }
+        // Add more items as needed
+      };
+
+      await emptyCart(req, res, 'function', 'hello word');
+
+    });
   });
