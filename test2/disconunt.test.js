@@ -55,22 +55,40 @@ describe('calculateDiscount', () => {
         expect(req.session.totalCartDiscount).toBe(0);
     });
 
-    test('0', () => {
+    test('no aplica descuento negativo', () => {
         const discount = {
-            type: 'amoun',
-            value: 10
+            type: 'amount',
+            value: -10
         };
 
         const req = {
             session: {
-                discountCode: 'PERCENT20',
+                discountCode: 'NEGATIVE10',
                 totalCartNetAmount: 100
             }
         };
 
         calculateDiscount(discount, req);
 
-        expect(req.session.totalCartDiscount).toBe(0);
+        expect(req.session.totalCartDiscount).toBe(0); // El descuento no puede ser negativo
+    });
+
+    test('no aplica descuento mayor al total del carrito', () => {
+        const discount = {
+            type: 'amount',
+            value: 200
+        };
+
+        const req = {
+            session: {
+                discountCode: 'DESC200',
+                totalCartNetAmount: 100
+            }
+        };
+
+        calculateDiscount(discount, req);
+
+        expect(req.session.totalCartDiscount).toBe(100); // El descuento no puede ser mayor al total
     });
 
     // Puedes agregar más casos de prueba según sea necesario
