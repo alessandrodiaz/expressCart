@@ -34,7 +34,7 @@
 
       // Mocking discount module
       req.app.db.discounts.findOne.mockResolvedValue({
-        // Your mock data here
+
       });
 
       // Mocking shipping module
